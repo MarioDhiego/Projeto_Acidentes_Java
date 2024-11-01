@@ -1,48 +1,54 @@
- 
-// Universidade Federal do Pará   //
-// Disciplina: Programação II     //
-// Professor: Gustavo             //
+package abstracts;
+
+import classes.OcorrenciaAcidente;
 
 public abstract class Veiculo {
-       private Integer idVeiculo;
-       private OcorrenciaAcidente OcorrenciaAcidente;
-       private String marcaVeiculo;
-       private String modeloVeiculo;
-       private String placaVeiculo;
+	private Integer idVeiculo;
+	private OcorrenciaAcidente ocorrenciaAcidente;
+	private String marcaVeiculo;
+	private String modeloVeiculo;
+	private String placaVeiculo;
+	
+	public abstract void imprimirVeiculo();
 
-// ----- IDENTIFICAÇÃO DO VEICULO ----- //
-public Integer getIdVeiculo(){
-        return idVeiculo;
-}
-public void setIdVeiculo(Integer idVeiculo){
-    this.idVeiculo = idVeiculo;
-}
-//  --------------------------------  //
+	public Integer getIdVeiculo() {
+		return idVeiculo;
+	}
 
-//  ------  MARCA DO VEICULO   -----  //
-public String getMarcaVeiculo() {
-        return marcaVeiculo;
-}
-public void setIdMarcaVeiculo(String marcaVeiculo){
-       this.marcaVeiculo = marcaVeiculo;
-}
-//  -----------------------------  ///
+	public void setIdVeiculo(Integer idVeiculo) {
+		this.idVeiculo = idVeiculo;
+	}
 
-//  ----- MODELO DO VEICULO  -----  //
-public String getModeloVeiculo(){
-    return modeloVeiculo;
-}
-public void setIdModeloVeiculo(String modeloVeiculo){
-    this.modeloVeiculo = modeloVeiculo;
-}
-//  -----------------------------  ///
+	public OcorrenciaAcidente getOcorrenciaAcidente() {
+		return ocorrenciaAcidente;
+	}
 
-//  ----- PLACA DO VEICULO  -----  //
-public String getPlacaVeiculo(){
-    return placaVeiculo;
-}
-public void setIdPlacaVeiculo(String placaVeiculo){
-    this.placaVeiculo = placaVeiculo;
-}
-//  -----------------------------  ///
+	public void setOcorrenciaAcidente(OcorrenciaAcidente ocorrenciaAcidente) {
+		this.ocorrenciaAcidente = ocorrenciaAcidente;
+	}
+
+	public String getMarcaVeiculo() {
+		return marcaVeiculo;
+	}
+
+	public void setMarcaVeiculo(String marcaVeiculo) {
+		this.marcaVeiculo = marcaVeiculo;
+	}
+
+	public String getModeloVeiculo() {
+		return modeloVeiculo;
+	}
+
+	public void setModeloVeiculo(String modeloVeiculo) {
+		this.modeloVeiculo = modeloVeiculo;
+	}
+	
+	public String getPlacaVeiculo() {
+		return placaVeiculo;
+	}
+
+	public void setPlacaVeiculo(String placaVeiculo) {
+		this.placaVeiculo = placaVeiculo;
+	}
+
 }

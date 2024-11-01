@@ -1,14 +1,18 @@
+package classes;
 
+import abstracts.Veiculo;
 
-public class Onibus extends Veiculo{
-    @Override
-    public void imprimirVeiculo(){
-        System.out.println("√îNIBUS DA OCORR√äNCIA");
-        System.err.println("ID VE√çCULO: " + getIdVeiculo());
-        System.out.println("OCORR√äNCIA: " + "ID:" + "getOcorrenciaAcidente().getIdOcorrenciaAcidente()+","LOCAL: "+getOcorrenciaAcidente().getLocal());
-        System.out.println("MARCA VE√çCULO: " + getMarcaVeiculo());
-        System.out.println("MODELO VE√çCULO: " + getModeloVeiculo());
-        System.out.println("PLACA VE√çCULO: " + getPlacaVeiculo());
-    }
-    
+public class Onibus extends Veiculo
+{
+	@Override
+	public void imprimirVeiculo()
+	{
+		System.out.println("‘NIBUS DA OCORR NCIA");
+
+		System.out.println("ID VEÕCULO:     " + getIdVeiculo());
+		System.out.println("OCORR NCIA:     " +"ID: "+ getOcorrenciaAcidente().getIdOcorrenciaAcidente()+", LOCAL: "+getOcorrenciaAcidente().getLocal());
+		System.out.println("MARCA VEÕCULO:  " + getMarcaVeiculo());
+		System.out.println("MODELO VEÕCULO: " + getModeloVeiculo());
+		System.out.println("PLACA VEÕCULO:  " + getPlacaVeiculo());
+	}
 }
