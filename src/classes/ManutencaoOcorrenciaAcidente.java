@@ -76,7 +76,7 @@ public class ManutencaoOcorrenciaAcidente implements ImanutencaoOcorrenciaAciden
 		System.out.println("=======================================================================================");
 		System.out.println("");
 		System.out.println("");
-		System.err.println("Resultado da Ocorrência");
+		System.err.println(" ------------------------------ Resultado da Ocorrência -------------------------------");
 		ocorrenciaAcidente.imprimirOcorrenciaAcidente();
 		System.out.println("----------------------------------------------------------------------------------------");
 		System.out.println("");
@@ -96,9 +96,12 @@ public class ManutencaoOcorrenciaAcidente implements ImanutencaoOcorrenciaAciden
 		System.out.println("ID VÍTIMA, NOME VÍTIMA, GRAVIDADE VÍTIMA, ID VEÍCULO");
 		System.out.println("---------------------------------------------------------------------------------------");
 		System.out.println("");
+		System.err.println("------------------------------ Resultado das Vítimas ----------------------------------");
+		System.out.println("=======================================================================================");
 		for (Vitima vitima : vitimas) {
 			vitima.imprimirVitima(vitima);
 		}
+		System.out.println("=======================================================================================");
 	}
 }
 // ====================================================================================================================//
