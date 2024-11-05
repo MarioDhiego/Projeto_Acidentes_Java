@@ -1,5 +1,6 @@
+// ====================================================================================================================//
+// PACOTES
 package classes;
-
 public class MarcaModeloVeiculo {
 
 	private Integer idMarcaVeiculo;
@@ -33,7 +34,6 @@ public class MarcaModeloVeiculo {
 	public void setModeloVeicjo(String modeloVeicjo) {
 		this.modeloVeicjo = modeloVeicjo;
 	}
-	
-	
 
 }
+// ====================================================================================================================//

@@ -1,7 +1,10 @@
-package classes;
 
+// ====================================================================================================================//
+// PACOTES
+package classes;
 import abstracts.Ocorrencia;
 
+// Ocorrência do Acidente herda da CLASSE VEÍCULO
 public class OcorrenciaAcidente extends Ocorrencia{
 	private Integer idOcorrenciaAcidente;
 	private String logradouro;
@@ -50,5 +53,5 @@ public class OcorrenciaAcidente extends Ocorrencia{
 	public void setDtAcidente(String dtAcidente) {
 		this.dtAcidente = dtAcidente;
 	}
-
 }
+// ====================================================================================================================//

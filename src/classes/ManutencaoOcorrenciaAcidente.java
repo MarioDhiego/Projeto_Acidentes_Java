@@ -1,11 +1,10 @@
 package classes;
 
-import java.util.List;
-
 import interfaces.ImanutencaoOcorrenciaAcidente;
 import interfaces.IocorrenciaAcidente;
 import interfaces.IveiculoOcorrenciaAcidente;
 import interfaces.IvitimaOcorrenciaAcidente;
+import java.util.List;
 
 public class ManutencaoOcorrenciaAcidente implements ImanutencaoOcorrenciaAcidente, IocorrenciaAcidente, IveiculoOcorrenciaAcidente, IvitimaOcorrenciaAcidente {
 
@@ -69,32 +68,37 @@ public class ManutencaoOcorrenciaAcidente implements ImanutencaoOcorrenciaAciden
 
 	@Override
 	public void listarAcidente(OcorrenciaAcidente ocorrenciaAcidente, List<VeiculoOcorrenciaAcidente> veiculosOcorrenciaAcidente, List<Vitima> vitimas) {
-		System.out.println("OCORRÊNCIAS DE ACIDENTE DE TRÂNSITO");
-		System.out.println("ID OCORRÊNCIA, DATA ACIDENTE, LOGRADOURO DO ACIDENTE, LOCAL, TIPO LOCAL, BAIRRO, RODOVIA, TIPO RODOVIA, TIPO VIA, TIPO ZONA, FONTE, CAUSA");
-		System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.println("=======================================================================================");
+		System.out.println("------------------------ OCORRÊNCIAS DE ACIDENTE DE TRÂNSITO --------------------------");
+		System.out.println("ID OCORRÊNCIA, DATA ACIDENTE, LOGRADOURO DO ACIDENTE, LOCAL, TIPO LOCAL");
+		System.out.println("---------------------------------------------------------------------------------------");
+		System.out.println("BAIRRO, RODOVIA, TIPO RODOVIA, TIPO VIA, TIPO ZONA, FONTE, CAUSA");
+		System.out.println("=======================================================================================");
 		System.out.println("");
+		System.out.println("");
+		System.err.println("Resultado da Ocorrência");
 		ocorrenciaAcidente.imprimirOcorrenciaAcidente();
-		System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
 		System.out.println("");
-
-		System.out.println("VEÍCULOS DA OCORRÊNCIA DE ACIDENTE DE TRÂNSITO");
+		System.out.println("=======================================================================================");
+		System.out.println("---------------- VEÍCULOS DA OCORRÊNCIA DE ACIDENTE DE TRÂNSITO -----------------------");
+		System.err.println("=======================================================================================");
 		System.out.println("ID VEÍCULO, MARCA, MODELO, TIPO DE VEÍCULO, PLACA, ID OCORRÊNCIA");
-		System.out.println("----------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------------------");
 		System.out.println("");
 		for (VeiculoOcorrenciaAcidente veiculoOcorrenciaAcidente : veiculosOcorrenciaAcidente) {
 			veiculoOcorrenciaAcidente.imprimirVeiculo();
 		}
-		System.out.println("----------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------------------");
 		System.out.println("");
-
-		System.out.println("VÍTIMAS DO VEÍCULO DA OCORRÊNCIA DE ACIDENTE DE TRÂNSITO");
+		System.out.println("=======================================================================================");
+		System.out.println("---------------- VÍTIMAS DO VEÍCULO DA OCORRÊNCIA DE ACIDENTE DE TRÂNSITO -------------");
 		System.out.println("ID VÍTIMA, NOME VÍTIMA, GRAVIDADE VÍTIMA, ID VEÍCULO");
-		System.out.println("-------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------------------");
 		System.out.println("");
 		for (Vitima vitima : vitimas) {
 			vitima.imprimirVitima(vitima);
 		}
-
 	}
-
 }
+// ====================================================================================================================//

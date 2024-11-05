@@ -1,7 +1,10 @@
-package classes;
 
+// ====================================================================================================================//
+// PACOTES
+package classes;
 import abstracts.Veiculo;
 
+// Veículo da Ocorrência do Acidente herda da CLASSE VEÍCULO
 public class VeiculoOcorrenciaAcidente extends Veiculo {
 
 	private Integer idVeiculo;
@@ -51,3 +54,4 @@ public class VeiculoOcorrenciaAcidente extends Veiculo {
 	}
 
 }
+// ====================================================================================================================//

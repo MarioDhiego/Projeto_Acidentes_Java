@@ -1,7 +1,11 @@
-package classes;
 
+
+// ====================================================================================================================//
+// PACOTES
+package classes;
 import abstracts.Rodovia;
 
+// Rodovia do Acidente herda de RODOVIA
 public class RodoviaOcorrenciaAcidente extends Rodovia {
 
 	private Integer idRodovia;
@@ -30,5 +34,5 @@ public class RodoviaOcorrenciaAcidente extends Rodovia {
 		this.descricaoRodovia = descricaoRodovia;
 	}
 
-
 }
+// ====================================================================================================================//

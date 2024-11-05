@@ -1,3 +1,6 @@
+
+// ====================================================================================================================//
+// PACOTES
 package classes;
 
 public class TipoVeiculo {
@@ -27,6 +30,6 @@ public class TipoVeiculo {
 	public void setTipoVeiculo(String tipoVeiculo) {
 		this.tipoVeiculo = tipoVeiculo;
 	}
-	
-	
+
 }
+// ====================================================================================================================//

@@ -1,5 +1,7 @@
-package classes;
 
+// ====================================================================================================================//
+// PACOTES
+package classes;
 import abstracts.Local;
 
 public class LocalOcorrenciaAcidente extends Local {
@@ -29,5 +31,5 @@ public class LocalOcorrenciaAcidente extends Local {
 	public void setDescricaoLocalOcorrenciaAcidente(String descricaoLocalOcorrenciaAcidente) {
 		this.descricaoLocalOcorrenciaAcidente = descricaoLocalOcorrenciaAcidente;
 	}
-
 }
+// ====================================================================================================================//
